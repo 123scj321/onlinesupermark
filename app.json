@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/banner/banner",
+    "pages/index/index",
+    "pages/product/banner/banner",
+    "pages/product/productList/productList",
+    "pages/product/productSearch/productSearch",
+    "pages/product/cart/cart",
+    "pages/people/peopleList/peopleList",
+    "pages/template/footer/footer",
+    "pages/template/floor/floor",
+    "pages/logs/logs",
+  "pages/product/productDetail/productDetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "线下超市",
+    "navigationBarTextStyle": "white"
+  }
+}

@@ -1,0 +1,146 @@
+<!--大容器  -->
+<view class='container'>
+<!--轮播  -->
+<swiper class="swiper" indicator-dots="true" autoplay="true" interval="3000" duration="1000">    
+      <block wx:for="{{movies}}" wx:key="{{movies}}" wx:for-index="index">    
+        <swiper-item>    
+          <image src="{{item.url}}" class="slide-image" mode="aspectFill" bindtap='goBanner' id="{{index}}"/>    
+        </swiper-item>    
+      </block>    
+ </swiper>
+ <view class='search'>
+  <view class='searchContainer'>
+    <view class='icon-wxbsousuotuiguang iconfont'></view>
+    <input class='searchText' placeholder='请输入搜索的内容' placeholder-style='color:#fff' class='searchText' type='text' value="{{searchText}}" bindblur='goSearch'></input>
+  </view>
+ </view>
+ <!--分类样式  -->
+<view class='classContainer'>
+  <view class='classContext'>
+    <view class='listContainer' wx:for="{{classList}}" wx:key="{{classList}}" wx:for-item="item" wx:for-index="index" bindtap='goProductList' id="{{index}}"> 
+      <image src='{{item.image}}'></image>
+      <text>{{item.text}}</text>
+    </view>
+  </view>
+</view>
+<!--地址栏  -->
+<view class='addressContainer'>
+  <view class='addressLeft'>
+    <image src='../../images/file_5951be109c09b.png'></image>
+    <view class='addressDetail'>地址：<text>陕西省西安市碑林区体育场十字</text></view>
+  </view>
+  <view class='knowlendgeMore'>
+    <view class='btnKL'>了解更多>></view>
+  </view>
+</view>
+<!--优惠券栏  -->
+<view class="couponContainer">
+  <view class='couponImage'>
+    <image src='../../images/file_5950e09d292ff.jpg'></image>
+    <image src='../../images/file_5950e09d387a6.jpg'></image>
+  </view>
+</view>
+<!--特价商品  -->
+<view class='specialContainer'>
+<!--活动图片  -->
+  <view class="specialImage">
+    <image src='../../images/file_594b6fadbbcf2.jpg'></image>
+  </view>
+  <!--活动内容介绍  -->
+  <view class='specialinTroduce'>
+    <!--活动内容图片  -->
+    <view class="specialinTroduceImage">
+      <image src='../../images/file_594a31d547f40.jpg'></image>
+    </view>
+    <!-- 活动详情 -->
+    <view class='specialinTroduceDetail'>
+      <view class='specialinTroduceDetailText' hover-class='active'>
+        山东佳沃新鲜蓝莓125*4盒...
+      </view>
+      <view class='otherContainer'>
+        <view class='price'>
+          <view class='nowPrice'>¥<text>100.00</text></view>
+          <view class='oldPrice'>¥<text>150.00</text></view>
+        </view> 
+        <view class='activityTime'>
+          <view class="time">
+            已结束 <text>00</text>:<text >00</text>:<text>00</text>
+          </view>
+          <view class="sellProgress">已售 33.3%<progress percent='33.3' color='#f00'></progress></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!--热卖商品  -->
+<view class='hotContainer'>
+<!--热卖图片  -->
+  <view class="hotImageLogo">
+    <image src='../../images/file_594b6fada068d.jpg'></image>
+  </view>
+  <!--活动内容介绍  -->
+  <view class='hotinTroduce'>
+    <!-- 活动列表 -->
+    <scroll-view scroll-x="true" class="hotList">
+      <view class="hotItem" wx:for="{{hotList}}" wx:key="{{hotList}}" wx:item="item" wx:index="index">
+        <view class="hotImage"><image src="{{item.image}}"></image></view>
+        <view class="hotDetail">{{item.title}}</view>
+        <view class="otherHotDetail">
+          <view class="price">¥<text>{{item.price}}</text></view>
+          <view class='count'>销量：<text>{{item.count}}</text></view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>
+<!-- 折扣商品-->
+<view class='disCountContainer'>
+<!--活动图片  -->
+  <view class="disCountImage">
+    <image src='../../images/file_594b6fad97940.jpg'></image>
+  </view>
+  <!--活动内容介绍  -->
+  <view class='disCountinTroduce' wx:for="{{discountList}}" wx:key="{{discountList}}" wx:item="item" wx:index="index">
+    <!--活动内容图片  -->
+    <view class="disCountinTroduceImage">
+      <image src='{{item.image}}'></image>
+    </view>
+    <!-- 活动详情 -->
+    <view class='disCountinTroduceDetail'>
+      <view class='disCountinTroduceDetailText' hover-class='active'>
+        {{item.title}}
+      </view>
+      <view class='disCountinOtherContainer'>
+        <view class='price'>¥<text>{{item.price}}</text></view> 
+        <view class='count'>销量<text>{{item.count}}</text></view>
+      </view>
+    </view>
+  </view>
+</view>
+<!--太高地步  -->
+<view style="height:120rpx"></view>
+
+ <!--底部样式  -->
+ <view class="footerContainer">
+  <view class='footerContext'>
+    <view class="home">
+        <image src="../../images/file_594b69153beb3.png"></image>
+        <text class='active'>首页</text>
+    </view>
+     <view class="home" id="../product/productList/productList" bindtap='skip'>
+        <image src="../../images/file_594a140485d3c.png"></image>
+        <text>分类</text>
+    </view>
+    <view class="home" id="../product/cart/cart" bindtap='skip'>
+        <image src="../../images/file_594a142ce69ce.png" id="../product/cart/cart"></image>
+        <text>购物车</text>
+    </view>
+    <view class="home" id="../people/peopleList/peopleList"  bindtap='skip'>
+        <image src="../../images/file_594a14051dfba.png"></image>
+        <text>我的</text>
+    </view>
+  </view>
+</view>
+
+</view>
+

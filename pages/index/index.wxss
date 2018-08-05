@@ -1,0 +1,346 @@
+page{
+  background-color: #f0f0f0;
+}
+.swiper {
+  height: 356rpx;
+  width: 100%;
+}
+.swiper image {
+  height: 100%;
+  width: 100%;
+}
+.search{
+  width:100%;
+  height:100rpx;
+  position: absolute;
+  top:20rpx;
+}
+.searchContainer{
+  width:80%;
+  margin:0 auto;
+  height:60rpx;
+  background: rgba(255,255, 255, 0.3);
+  border-radius: 80rpx;
+  line-height: 60rpx;
+  display: flex;
+  flex-flow: row;
+}
+.iconfont{
+  font-size:24px;
+  color: #fff;
+  margin-left:100rpx;
+}
+.searchText{
+  font-size:32rpx;
+  color:white;
+  width:400rpx;
+  margin-left:40rpx;
+}
+.classContainer{
+  background-color: #fff;
+  width:100%;
+  height:404rpx;
+  display: block;
+}
+.classContext{
+  width:720;
+  height:320rpx;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20rpx auto;
+}
+.listContainer{
+  display: block;
+  width:180rpx;
+  margin-top: 10rpx;
+}
+.listContainer image{
+  display: block;
+  width:128rpx;
+  height:128rpx;
+  margin:0 auto;
+}
+.listContainer text{
+  text-align: center;
+  display: block;
+  font-size:36rpx;
+  color:#666;
+}
+/*地址样式  */
+.addressContainer{
+  margin-top:5rpx;
+  background-color: #fff;
+  width:100%;
+  height:100rpx;
+  display: flex;
+  flex-flow: row;
+}
+.addressLeft{
+  display: flex;
+  flex-flow: row;
+  width:500rpx;
+  height: 80rpx;
+  margin-top:15rpx;
+  margin-left:50rpx;
+  line-height: 60rpx;
+}
+.addressLeft image{
+  width:60rpx;
+  height:60rpx;
+}
+.addressDetail{
+  color:#666;
+  margin-left:10rpx;
+  width:400rpx;
+  height:60rpx;
+  font-size:32rpx;
+  overflow: hidden; 
+  line-height: 60rpx;
+}
+.knowlendgeMore{
+  margin-top: 20rpx;
+  font-size:34rpx;
+  color:#aaa;
+}
+/*优惠券样式  */
+.couponContainer{
+  margin-top:14rpx;
+  width:100%;
+  height:180rpx;
+  background-color:#fff; 
+}
+.couponImage{
+  width:90%;
+  display: flex;
+  flex-flow: row;
+  margin: 20rpx auto;
+  justify-content: space-between;
+}
+.couponImage image{
+  display: block;
+  width:320rpx;
+  height:140rpx;
+}
+/*特价商品样式  */
+.specialContainer{
+  margin-top:15rpx; 
+  background-color:#fff; 
+  width:100%;
+  height:500rpx;
+}
+.specialImage{
+  width:100%;
+  height:300rpx;
+}
+.specialImage image{
+  width:100%;
+  height:100%;
+}
+.specialinTroduce{
+  width:94%;
+  height:170rpx;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin: 20rpx auto;
+  border-bottom: 2rpx solid #f0f0f0;
+}
+.specialinTroduceImage{
+  width:150rpx;
+  height:150rpx;
+}
+.specialinTroduceImage image{
+  width:100%;
+  height:100%;
+  display: block;
+}
+.specialinTroduceDetail{
+  margin-left: 30rpx;
+  width:540rpx;
+}
+.specialinTroduceDetailText{
+  font-size:34rpx;
+  color:#333;
+  width:100%;
+  height:45rpx;
+  overflow: hidden;
+}
+.active{
+  color:#f00;
+}
+.otherContainer{
+  margin-top:20rpx;
+  width:100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.price{
+  width:120rpx;
+}
+.nowPrice{
+  color:orangered;
+  font-size:34rpx;
+}
+.oldPrice{
+  font-size:24rpx;
+  color:#aaa;
+  text-decoration:line-through;
+}
+.activityTime{
+  text-align: right;
+  width:340rpx;
+  padding-top: 10rpx;
+}
+.time{
+  float: right;
+  width:240rpx;
+  background-color: #f0f0f0;
+  font-size:32rpx;
+  color: #666;
+}
+.time text{
+  display: inline;
+  background: #aaa;
+  color:#fff;
+  border-radius: 5rpx;
+}
+.sellProgress{
+  float: right;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  width:320rpx;
+  font-size:28rpx;
+  color:#666;
+}
+.sellProgress progress{
+  display: inline-block;
+  width:150rpx;
+  margin-top:18rpx;
+  border-radius: 10rpx;
+  height:10rpx;
+}
+/*热卖商品  */
+.hotContainer{
+  margin-top:15rpx; 
+  background-color:#fff; 
+  width:100%;
+  /* height:530rpx; */
+}
+.hotImageLogo{
+  width:100%;
+  height:300rpx;
+}
+.hotImageLogo image{
+  width:100%;
+  height:100%;
+}
+.hotinTroduce{
+  width:100%;
+  height:560rpx;  
+}
+.hotList{
+  white-space: nowrap; 
+  display: flex
+}
+.hotItem{
+  margin-top:50rpx;
+  margin-left:40rpx;
+  margin-right:40rpx;
+  width:348rpx;
+  height: 500rpx;
+  display: inline-block;
+}
+.hotImage{
+  width:348rpx;
+  height:348rpx;
+}
+.hotImage image{
+  width:100%;
+  height:100%;
+  display: inline-block;
+}
+.hotDetail{
+  margin-top:20rpx;
+  width:348rpx;
+  font-size:38rpx;
+  color:#333;
+  text-align: center;
+  overflow: hidden;
+}
+.otherHotDetail{
+  width:100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.otherHotDetail .price{
+  color:orangered;
+  font-size:34rpx;
+}
+.otherHotDetail .count{
+  color:#aaa;
+  font-size:34rpx;
+}
+/*折扣商品样式  */
+.disCountContainer{
+  margin-top:15rpx; 
+  background-color:#fff; 
+  width:100%;
+}
+.disCountImage{
+  width:100%;
+  height:300rpx;
+}
+.disCountImage image{
+  width:100%;
+  height:100%;
+}
+.disCountinTroduce{
+  width:94%;
+  height:200rpx;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin: 20rpx auto;
+  border-bottom: 10rpx solid #f0f0f0;
+}
+.disCountinTroduceImage{
+  width:177rpx;
+  height:177rpx;
+}
+.disCountinTroduceImage image{
+  width:100%;
+  height:100%;
+  display: block;
+}
+.disCountinTroduceDetail{
+  margin-top:20rpx;
+  margin-left: 30rpx;
+  width:500rpx;
+}
+.disCountinTroduceDetailText{
+  font-size:34rpx;
+  color:#333;
+  width:100%;
+  height:90rpx;
+}
+.disCountinOtherContainer{
+  margin-top:20rpx;
+  width:100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.disCountinOtherContainer .price{
+  font-size:32rpx;
+  width:120rpx;
+  color:red;
+}
+.disCountinOtherContainer .count{
+  font-size:32rpx;
+  color:#666;
+}

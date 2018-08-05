@@ -1,0 +1,21 @@
+<!--热卖商品  -->
+<view class='hotContainer'>
+<!--热卖图片  -->
+  <view class="hotImageLogo">
+    <image src='../{{nowImage}}'></image>
+  </view>
+  <!--活动内容介绍  -->
+  <view class='hotinTroduce'>
+    <!-- 活动列表 -->
+    <view  class="hotList">
+      <view class="hotItem" wx:for="{{nowList}}" wx:key="{{nowList}}" wx:item="item" wx:index="index">
+        <view class="hotImage"><image src="../{{item.image}}"></image></view>
+        <view class="hotDetail">{{item.title}}</view>
+        <view class="otherHotDetail">
+          <view class="price">¥<text>{{item.price}}</text></view>
+          <view class='count'>销量：<text>{{item.count}}</text></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

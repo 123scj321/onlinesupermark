@@ -1,0 +1,43 @@
+<!--pages/product/cart/cart.wxml-->
+<view>
+  <view class='title'>
+   <view class='cartTitle'>购物车</view>
+   <view class='cartEdit'>编辑</view>
+  </view>
+  <view class='cartCenter'>
+    <view class='allCheck'>
+      <radio width='20' height='20' color='#ff7000'></radio>全选
+    </view>
+    <view class='deleteChoose'>
+      <button class='deleteBtn'>删除所选</button>
+    </view>
+  </view>
+  <view class='cartMainContainer'>
+    <view class='cartRow'>
+    <view class='leftCols'>
+     <radio color="#ff7000"></radio> 
+     <image src='../../../images/file_594a33aaa54cb.jpg'></image>
+    </view>
+    <view class='centerCols'>
+     <view>悠乐国yolego大连美早樱桃国产车厘子 3斤装</view>
+     <view>价格 ¥29.00</view> 
+   </view>
+   <view class='rightCols'>
+     <view>-</view>
+     <view>0</view>
+     <view>+</view>
+   </view>
+  </view>
+  </view>
+  <view class='columnRow'>
+    <view class='allCheckColumn'>
+      <radio color='#ff7000'></radio>全选
+    </view>
+    <view catchlongtap='columnPrice'>
+      合计：<text>¥ 157.90</text>
+    </view>
+    <view class='columnBtn'>
+      <button>结算</button>
+    </view>
+  </view>
+</view>

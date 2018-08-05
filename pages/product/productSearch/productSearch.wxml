@@ -1,0 +1,31 @@
+<!--pages/product/productSearch/productSearch.wxml-->
+<view>
+  <view class='search'>
+    <view class='searchContainer'>
+      <view class='icon-wxbsousuotuiguang iconfont'></view>
+      <input class='searchText' placeholder='请输入搜索的内容' class='searchText' type='text' value="{{searchText}}" bindblur='searchText'></input>
+    </view>
+  </view>
+  <!--降低页面  -->
+  <view style='height:100rpx;'></view>
+  <!-- 折扣商品-->
+  <view class='disCountContainer'>
+    <!--活动内容介绍  -->
+    <view class='disCountinTroduce' wx:for="{{discountList}}" wx:key="{{discountList}}" wx:item="item" wx:index="index">
+      <!--活动内容图片  -->
+      <view class="disCountinTroduceImage">
+        <image src='../{{item.image}}'></image>
+      </view>
+      <!-- 活动详情 -->
+      <view class='disCountinTroduceDetail'>
+        <view class='disCountinTroduceDetailText' hover-class='active'>
+          {{item.title}}
+        </view>
+        <view class='disCountinOtherContainer'>
+          <view class='price'>¥<text>{{item.price}}</text></view> 
+          <view class='count'>销量<text>{{item.count}}</text></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

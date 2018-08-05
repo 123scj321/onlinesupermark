@@ -1,0 +1,110 @@
+/* pages/product/productList/productList.wxss */
+page{
+  background-color: #f0f0f0;
+}
+.disCountContainer{
+  /* margin-top:15rpx;  */
+  background-color:#fff; 
+   width:100%; 
+}
+/*产品分类列表内容  */
+.productListText{
+  border-bottom: 2rpx solid #f0f0f0;
+  padding-top:10rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  height:120rpx;
+  white-space: nowrap; 
+  display: flex;
+}
+.productListContainer{
+  margin-top: 20rpx;
+  margin-left:20rpx; 
+  margin-right:20rpx;
+  display: inline-block;
+  width:200rpx; 
+  height:80rpx;
+}
+.productListText .text{
+  color:#333;
+  font-size:44rpx;
+  text-align: center;
+}
+.productListText .active{
+  padding:10rpx 15rpx;
+  border-radius: 10rpx;
+  background:red;
+  color:#fff;
+}
+/*折扣商品样式  */
+.disCountListText{
+  border-bottom: 2rpx solid #f0f0f0;
+  padding-top:10rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  /* height:120rpx; */
+  display: flex;
+   white-space: nowrap;  
+  float: left;
+  /* flex-direction:column; */
+  
+}
+.disCountContainerText{
+  display: inline-block;
+  vertical-align:top; 
+  width:750rpx; 
+}
+.disCountImage{
+  width:100%;
+  height:300rpx;
+}
+.disCountImage image{
+  width:100%;
+  height:100%;
+}
+.disCountinTroduce{
+   width:94%; 
+  height:260rpx;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  border-bottom: 2rpx solid #f0f0f0;
+}
+.disCountinTroduceImage{
+  width:240rpx;
+  height:220rpx;
+}
+.disCountinTroduceImage image{
+  width:100%;
+  height:100%;
+  display: block;
+}
+.disCountinTroduceDetail{
+  margin-top:20rpx;
+  margin-left: 30rpx;
+  width:500rpx;
+}
+.disCountinTroduceDetailText{
+  font-size:40rpx;
+  color:#333;
+  width:500rpx;
+  height:90rpx;
+  white-space: pre-wrap;
+}
+
+.disCountinOtherContainer{
+  margin-top:50rpx;
+  width:100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.disCountinOtherContainer .price{
+  font-size:48rpx;
+  width:120rpx;
+  color:red;
+}
+.disCountinOtherContainer .count{
+  font-size:44rpx;
+  color:#666;
+}

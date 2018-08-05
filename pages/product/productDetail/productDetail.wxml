@@ -1,0 +1,63 @@
+<!--pages/product/productDetail/productDetail.wxml-->
+<view class='detailContainer'>
+  <view class='detailContext'>
+    <view class='titleImage'>
+      <image src="../../../images/file_594a31d547f40.jpg"></image>
+    </view>
+    <view class='priceContainer'>
+      <view class='priceLeft'>
+        <view class='newPrice'>¥<text>150</text></view>
+        <view class='oldActivity'>
+          <view class='oldPrice'>¥<text>150</text></view>
+          <view class='secondContainer'>
+            <view class='icon-task-management iconfont watch'></view>
+            <text>秒杀时间</text>
+          </view>
+        </view>
+      </view>
+      <view class='priceCenter'></view>
+      <view class='priceRight'>
+        <view class='secondTime'>
+            <view class="start">秒杀开始</view>
+            <view class='Time'><text>00</text>: <text>00</text>:<text>00</text></view>
+          </view>
+      </view>
+    </view>
+  </view>
+  <view class='detailContainer'>
+    <view class='detail'>
+    山东 佳沃 新鲜蓝莓125*4盒 酸甜爽口，适合你的口味，馈赠盆友特有面子
+    </view>
+    <view class='price'>¥ <text>100.00</text></view>
+      <view class='other'>
+        <view class='save'>库存：<text>2000</text>
+        </view>
+        <view class='transport'>运费：<text>包邮</text></view>
+    </view>
+  </view>
+  <view class='detailImages'>
+    <view class='lineLeft'></view>
+      <view class='icon-tubiaozhizuomobanyihuifu- iconfont'></view>
+      <text>详情</text>
+    <view class='lineRight'></view>
+  </view>
+  <view class='ImageList'>
+    <view class='ImageText'>产品详情</view>
+      <image src='../../../images/20170621164433_92209.jpg'></image>
+      <image src='../../../images/20170621164502_31815.jpg'></image>
+      <image src='../../../images/20170621164433_92209.jpg'></image>
+  </view> 
+   <view style='height:100rpx;'></view>
+   <view class='footer'>
+    <view class='cart'>
+      <view class='icon-cart iconfont'></view>
+      <text>购物车</text>
+    </view>
+    <view class='store'>
+      <view class='icon-wxbmingxingdianpu iconfont'></view>
+      <text>店铺</text>
+    </view>
+    <view class='addCart'>加入购物车</view>
+    <view class='nowBuy'>立即购买</view>
+  </view>
+</view>

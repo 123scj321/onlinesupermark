@@ -1,0 +1,53 @@
+<!--pages/people/peopleList/peopleList.wxml-->
+<view class='peopleContainer'>
+  <view class='peopleImages'>
+    <image src='../../../images/x.gif' class='peopleBackground'></image>
+    <image src='../../../images/default_photo.png' class='peopleAvatar'></image>
+    <text class='peopleLogs'>请先登录</text>
+  </view>
+  <view class='peopleListContainer'>
+    <view class='peopleListContainerRow'>
+      <view class='icon-wodedingdan iconfont'></view>
+      <text>我的订单</text>
+    </view>
+    <view class='peopleListContainerRow'>
+      <view class='icon-shouhuodizhi iconfont'></view>
+      <text>收货地址</text>
+    </view>
+    <view class='peopleListContainerRow' id="../../product/cart/cart" bindtap='skip'>
+      <view class='icon-gouwuche iconfont'></view>
+      <text>购物车</text>
+    </view>
+    <view class='peopleListContainerRow'>
+      <view class='icon-shezhi iconfont'></view>
+      <text>系统通知</text>
+    </view>
+    <view class='peopleListContainerRow'>
+      <view class='icon-wodehongbao iconfont'></view>
+      <text>储备金</text>
+    </view>
+  </view>
+  <!--太高地步  -->
+<view style="height:120rpx"></view>
+ <!--底部样式  -->
+ <view class="footerContainer">
+  <view class='footerContext'>
+    <view class="home" id="../../index/index" bindtap='skip'>
+        <image src="../../../images/file_594a14051dfba.png"></image>
+        <text>首页</text>
+    </view>
+     <view class="home" id="../../product/productList/productList" bindtap='skip'>
+        <image src="../../../images/file_594a140485d3c.png"></image>
+        <text>分类</text>
+    </view>
+    <view class="home" id="../../product/cart/cart" bindtap='skip'>
+        <image src="../../../images/file_594a142ce69ce.png" id="../product/cart/cart"></image>
+        <text>购物车</text>
+    </view>
+    <view class="home">
+        <image src="../../../images/file_594cb472b1919.png"></image>
+        <text  class='active'>我的</text>
+    </view>
+  </view>
+</view>
+</view>
